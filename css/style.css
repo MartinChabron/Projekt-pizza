@@ -1,0 +1,423 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*rausable*/
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.heading-main h2{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+
+}
+
+.heading-main h2:after{
+    content: " ";
+    display: block;
+    width: 150px;
+    border-bottom: 2px solid #e9c46a;
+    margin: 20px auto;
+
+}
+
+/*--------------header nav----------------*/
+
+header{
+    background: linear-gradient(rgba(47, 47, 49, 0.61), rgba(47, 47, 49, 0.61) ), url(../images/pizza-syr.jpg);  /* linear- gradient sposobuje stmavenenie pozadia/obrazku (bodky v url znamenaju ze ma ist o zložku vysie)*/
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.nav-background{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(47, 47, 49, 0.61);
+    position: fixed;
+    z-index: 50;
+    
+}
+
+.logo img{
+     width: 130px;
+     position: absolute;
+     top: 3%;
+
+}
+
+nav ul{
+    float: right;
+    margin-top: 10px;
+
+    position: fixed;
+    margin-left: 47%;
+    z-index: 100;
+
+}
+
+nav ul li{
+    display: inline-block;  /* zarovna menu do riadku*/
+    margin-left: 15px;
+
+
+}
+
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+
+
+    
+}
+nav ul li a:link,
+nav ul li a:visited{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover,
+nav ul li a:active{
+    border-bottom: 2px solid #e9c46a;
+    transition: border-bottom 1s;
+
+    
+
+
+}
+
+
+
+/*header*/
+
+
+.header-text{
+    position: absolute;   /*vytrhnutie zo stránky*/
+    top: 50%;
+    left: 41%;
+    transform: translate(-50%,-50%);    /* zarovnanie presne na stred stránky*/
+}
+/*skuska*/
+.header-text h1{
+    color: beige;
+    font-size: 40px;
+    font-family:fantasy;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+}
+
+/*vseobecne nastavenie oboch tlačidiel*/ 
+
+.btn{
+    display: inline-block;   /*
+
+    inline: paddingy po všech stranách, marginy jen vlevo a vpravo, nemá výšku ani šířku;
+    
+    inline-block: má marginy a padingy po všech stranách, má výšku i šířku, nechá elementy vedle sebe
+    
+    block: má marginy a paddingy po všech stranách, má výšku i šířku, každý element je na jednom řádku
+    
+    none - nechá zmizet
+    
+     */
+    
+    color: aliceblue;
+    font-size: 20px;
+    margin-top: 7px;             /* nebude fungovat pokial nebude zadani aj display:inline-block*/
+    padding: 5px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    /*transform: translate(40%,-10%);*/
+}
+/*prve tlačitko**/
+.prve:link,
+.prve:visited{
+    background: #e9c46a;
+}
+
+.prve:hover,
+.prve:active{
+    background: #e0ae2d;
+    border: 2px solid #e0ae2d;
+    transition: background 0.5s;   /* zmeni farbu pozadia za o 1.5s neskor*/
+
+}
+
+/*druhe tlačitko*/
+.druhe:link,
+.druhe:visited{
+    margin-left: 5px;
+    border: 2px solid #e9c46a;
+}
+
+.druhe:hover,
+.druhe:active{
+    border: 2px solid #e0ae2d;
+    background: #e0ae2d;
+    transition: background 0.5s;
+}
+
+/*****Mobilnavigation*********/
+
+.mobile-nav-icon{
+    float: right;
+    margin-top: 8px;
+    display: none;
+    
+    
+}
+
+
+/*******about-us ******/
+
+.pizza-example img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 4px 6px 10px #000;
+ }
+
+ /*******Our pizza******/
+
+ .Pizza-info img{
+    width: 100%;
+    height: 270px;
+    border-radius: 20px;
+    box-shadow: 4px 6px 10px #000;
+ }
+
+ .text-pizza {
+    margin-bottom: 20px;
+ }
+
+ .text-pizza p{
+    margin-left: 60px;
+    font-size: 20px;
+ }
+
+ .text-pizza div {
+    width: 50px;
+    height: 50px;
+    border:  2px solid #e9c46a;
+    text-align: center;
+    border-radius: 50%;
+    padding: 12px;
+    float: left;
+}
+
+/*******Reference******/
+
+.reference{
+    background: linear-gradient(rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)),
+     url(../images/pizza-syr.jpg);
+     background-attachment: fixed;   /* ukotvy pozadie obrazku*/
+    
+    
+}
+
+.reference h2{
+    color: #fff;
+    padding-top: 50px;
+    
+}.one-reference{
+    color: #fff;
+    font-size: 20px;
+
+}
+
+.one-reference p{
+    font-style: italic;
+}
+
+.two-reference {
+    color: #fff;
+    font-size: 20px;
+    
+}
+
+.two-reference p{
+    font-style: italic;
+}
+
+
+.three-reference {
+    color: #fff;
+    font-size: 20px;
+   
+}
+.three-reference p{
+    font-style: italic;
+}
+
+
+
+.reference h2:after{
+    border-bottom: 2px solid white;
+}
+
+.photo-name{
+    margin-top: 100px;
+    margin-bottom: 50px;
+   
+    
+}
+
+.photo-name-peter{
+    margin-top: 80px;
+    margin-bottom: 10px;
+    font-style: italic;
+
+}
+
+.photo-name-peter p{
+    padding: 16px;
+    margin-left: 58px;
+    font-style: normal;
+
+}
+.photo-name-peter img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: left;
+    
+    
+}
+
+.photo-name p{
+    padding: 13px;
+    margin-left: 60px;
+    font-style: normal;
+}
+
+.photo-name img{
+    width: 50px;
+    border-radius: 50%;
+    float: left;
+    
+}
+
+/*******Photo-gallery******/
+.photo-segment li{
+    list-style-type: none;
+    background-color: #e9c46a;
+    overflow: hidden;
+    height: 300px;
+    
+}
+.photo-segment img{
+    width: 100%;
+    height: 300px;
+    opacity: 0.5;
+    transform: scale(1.15);
+}
+
+.photo-segment img:hover{
+    transition: transform 0.5s; opacity: 0.5s;
+    transform: scale(1);
+    opacity: 1;
+
+}
+
+/*******Contact-form******/
+.contact-form{
+    max-width: 700px;
+    text-align: center;
+
+}
+
+.contact-form input{
+    width: 80%;
+    margin: 10px 0px;
+    padding: 7px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+
+.contact-form textarea{
+    width: 80%;
+    width: 80%;
+    margin: 10px 0px;
+    padding: 7px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="submit"] {
+    background-color: #e9c46a;
+    color: #fff;
+    border: 1px solid #e9c46a;
+    font-size: 20px;
+}
+
+input[type="submit"]:hover {
+    transition: background-color 0.5s;
+    background-color: #e0ae2d;
+    color: #000;
+    
+
+}
+
+/*******Footer******/
+
+.footer-page{
+    background-color: #e9c46a;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.social{
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.social p{
+    display: inline;
+    margin-right: 25px;
+}
+
+.social p a:link,
+.social p a:visited {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+.social p a:hover,
+.social p a:active {
+    color: rgb(10, 10, 10);
+
+}
+
+
+.footer-text{
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+
+
+
+/******Stop floating******/
+.clearfix {zoom:1}
+.clearfix::after{
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
